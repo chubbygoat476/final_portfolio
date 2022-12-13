@@ -1,0 +1,116 @@
+<!-- 
+    This template is based off of instructions from 
+    Easy Tutorials on YouTube https://youtu.be/oYRda7UtuhA
+ -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Development</title>
+    <link rel="stylesheet" href="reactstyle.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- <link font link!> -->
+    <!-- mobile font link!!!! -->
+</head>
+
+<body>
+    <!-- Header (welcome page?)-->
+    <section class="header">
+        <div class="frontpage_text">
+            <h1>React Development</h1>
+            <p>
+                We finally learn react! One of the most popular industry tools used in real-world development.
+                <br>
+                The main focus of this project was mastering the state logic needed to have an <a
+                    href="https://chubbygoat476.github.io/react_development/">interactive website</a>.
+                <br>
+                We needed to use state logic to implement a website where we could select items from
+                a menu, like by putting them in a cart or favorites list.
+                <br>
+            </p>
+            <a href="index.html" class="hero-btn">Back to Homepage</a>
+            <h2><br>Scroll to Continue</h2>
+        </div>
+    </section>
+    <!-- first_thing im showing-->
+    <section id="first_thing" class="first_thing">
+        <div class="container text-center">
+            <h1>Features</h1>
+            <p>
+                In addition to having an accumulator, we needed to build in a filtering system and a sorting system.
+                <br>
+                There is filtering by type of drink, and by price level.
+                <br>
+                You can also sort the selection by price or just a default ordering.
+                <br>
+                <br>
+            </p>
+            <div class="item1-row">
+                <div class="item1-col-4">
+                    <h4>Filter by Drink Type</h4>
+                    <img src="images/filtertype.png">
+                </div>
+                <div class="item1-col-4">
+                    <h4>Filter by Price Level</h4>
+                    <img src="images/filterprice.png">
+                </div>
+                <div class="item1-col-4">
+                    <h4>Sort by Price</h4>
+                    <img src="images/sortbyprice.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="second_thing" class="second_thing">
+        <div class="container text-center">
+            <h1>Implementation</h1>
+            <p>
+                <br>
+                Cards again prove to be the best system here.  Bootstrap has a nice library for working with them.
+                <br>                
+                At first, I was confused about how to manage state information.
+                <br>
+                In studio, I was passing state getters and setters around to different elements.
+                <br>
+                For the full website, I kept all the main functions in the main App program, and just called them from the component.
+                <br> 
+                Each component only gets the data it needs to render itself!
+                <br>
+            </p>
+            <div class="item2-row">
+                <div class="item2-col-6">
+                    <h4>App.js</h4>
+                    <img src="images/reactAppCode.png">
+                </div>
+                <div class="item2-col-6">
+                    <h4>DrinkItem.js</h4>
+                    <img src="images/reactDrinkItemCode.png ">
+                </div>
+            </div>
+    </section>
+    <section id="third_thing" class="third_thing">
+        <div class="container text-center">
+            <h1>Reflections</h1>
+            <div class="item3-row">
+                <div class="item3-col-12">
+                    <p>
+                        This was a fun project.  I can see why react has become the most widespread tool used in real world frontend development.
+                        Most of the websites I designed for this class, inclduing this one, were pretty simple and didn't need a whole bunch of features, so they didn't use much javascript.  
+                        This was the only one where I felt like I had to do "programming" in the traditional sense.  
+                        It was a little tricky to get the hang of it at first, but once I got the whole passing around functions thing down, it worked pretty well.
+                        It was most helpful to learn that javascript is more of a functional language than an object-oriented one, despite sharing a name and a good amount of syntax with java.
+                        <br>
+                        <br>
+                        Not learning react until the end allowed the class to focus more on the actual design of user experiences,  not just learning as many tools as possible.
+                        The most important part of working on anything user-facing is to make your product a good experience for your users, and that can often be achieved with 
+                        simple tools.  The class stressed that what is more important than the tools used, is how well designed the user experience is from the start.
+                        Prototyping, user testing, using a hierarchy of information, and considering accessibility are all essential parts of creating a good interface, regardless 
+                        of what tools you happen to be using, digital or otherwise.  
+                    </p>
+                </div>
+            </div>
+    </section>
+</body>
+
+</html>
